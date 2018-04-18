@@ -7,6 +7,4 @@ public class CharacterMaster : ScriptableObject
 {
     public string charaName;
     public string talkMessage;
-
-    public static readonly string MasterPathHeader = "Master";
 }

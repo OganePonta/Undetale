@@ -2,10 +2,15 @@
 
 public static class MasterLoader
 {
-    public static CharacterMaster LoadCharacterMaster(string charaID)
-    {
-        string masterPath = CharacterMaster.MasterPathHeader + "/" + charaID;
+    private static CharacterMasters _characterMasters = null;
 
-        return Resources.Load(masterPath) as CharacterMaster;
+    public static CharacterMaster LoadCharacterMaster(string charaID)
+    { 
+        if(_characterMasters == null)
+        {
+            _characterMasters = Resources.Load(CharacterMasters.MasterPath) as CharacterMasters;
+        }
+
+        return _characterMasters.SearchMaster(charaID);
     }
 }

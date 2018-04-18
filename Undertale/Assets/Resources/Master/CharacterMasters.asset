@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c329adb793021844c87bfe0ccb8eb76d, type: 3}
+  m_Name: CharacterMasters
+  m_EditorClassIdentifier: 
+  masters:
+  - {fileID: 11400000, guid: 907fbab389f428d44887d86cbab0144b, type: 2}
+  - {fileID: 11400000, guid: 80ee7d09f21ad0c4891e3957e55a0734, type: 2}
+  dummyMaster: {fileID: 11400000, guid: c3facb4155f6d9346bae198592ea71e7, type: 2}

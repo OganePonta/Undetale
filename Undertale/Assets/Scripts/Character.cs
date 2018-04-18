@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour {
+public class Character : MonoBehaviour
+{
+    private string Name { set; get; }
+    private string TalkMessage { get; set; }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public void Talk()
+    {
+        Debug.Log(Name + " : " + TalkMessage);
+    }
 }
